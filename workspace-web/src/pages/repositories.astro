@@ -1,0 +1,7 @@
+---
+import AppLayout from "../layouts/AppLayout.astro";
+import Icon from "../components/Icon.astro";
+import registry from "../generated/registry.json";
+---
+<AppLayout title="Repositories" section="repositories"><div class="page-head"><span class="eyebrow">Federation registry</span><h1>Repository boundaries</h1><p>Each boundary has an owner, purpose, visibility, and information classification. The main workspace discovers repositories but does not inherit their authority.</p></div><div class="repo-list">{registry.map((repo)=><article><div class="repo-icon"><Icon name={repo.visibility === "private" ? "lock" : "globe"}/></div><div><div class="repo-title"><h2>{repo.name}</h2><span class:list={["visibility",repo.visibility]}>{repo.visibility}</span></div><p>{repo.purpose}</p><dl><div><dt>Classification</dt><dd>{repo.data_classification}</dd></div><div><dt>Owner</dt><dd>{repo.owner}</dd></div><div><dt>Local path</dt><dd><code>{repo.local}</code></dd></div></dl></div></article>)}</div></AppLayout>
+

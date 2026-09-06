@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+import "@fontsource-variable/inter";
+import "@fontsource-variable/geist-mono";
+import Icon from "../components/Icon.astro";
+interface Props { title: string; section?: string; description?: string }
+const { title, section = "home", description = "Experimental operating layer for transparent, accountable government." } = Astro.props;
+const nav = [
+  ["home", "Overview", "/", "home"],
+  ["architecture", "Architecture", "/architecture/", "building"],
+  ["repositories", "Repositories", "/repositories/", "code"],
+  ["authority", "Authority", "/authority/", "scale"],
+  ["public", "Public knowledge", "/knowledge/", "globe"],
+];
+---
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={description} /><meta name="robots" content="noindex, nofollow" /><title>{title} | Nazareth-De Pinte Governance OS</title></head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <aside class="sidebar">
+      <a class="brand" href="/"><span class="civic-mark">ND</span><span><strong>Nazareth-De Pinte</strong><small>Municipal workspace</small></span></a>
+      <button class="search" type="button" data-search><Icon name="search" size={16}/><span>Search workspace</span><kbd>⌘ K</kbd></button>
+      <nav>{nav.map(([key,label,href,icon]) => <a href={href} class:list={{active: section === key}}><Icon name={icon}/><span>{label}</span></a>)}</nav>
+      <div class="side-block"><span class="side-label">Repository system</span><a href="/repositories/"><span class="repo-dot public"></span>Public workspace</a><a href="/repositories/"><span class="repo-dot private"></span>Official operations</a><a href="/repositories/"><span class="repo-dot public"></span>Oversight</a><a href="/repositories/"><span class="repo-dot public"></span>Service platform</a></div>
+      <footer><Icon name="shield"/><span><strong>Independent prototype</strong><small>Not an official service</small></span></footer>
+    </aside>
+    <main><header class="topbar"><span>Nazareth-De Pinte governance experiment</span><span class="mode">EXPERIMENTAL</span></header><div class="content" id="content"><slot /></div></main>
+    <dialog><form method="dialog"><Icon name="search"/><input type="search" placeholder="Search pages and repositories" autofocus/><button>Close</button></form><div class="search-results"></div></dialog>
+    <script>
+      const dialog = document.querySelector("dialog");
+      const input = dialog?.querySelector("input");
+      const target = dialog?.querySelector(".search-results");
+      type SearchEntry = { title: string; description: string; sourcePath: string; href: string };
+      let entries: SearchEntry[] = [];
+      const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character] ?? character);
+      const open = async () => { dialog?.showModal(); input?.focus(); if (!entries.length) entries = await (await fetch("/search-index.json")).json(); render(""); };
+      const render = (q: string) => { if (!target) return; const hits = entries.filter((e) => `${e.title} ${e.description} ${e.sourcePath}`.toLowerCase().includes(q.toLowerCase())).slice(0,12); target.innerHTML = hits.map((e) => `<a href="${escapeHtml(e.href)}"><strong>${escapeHtml(e.title)}</strong><small>${escapeHtml(e.sourcePath)}</small></a>`).join("") || `<p>No public page matches.</p>`; };
+      document.querySelector("[data-search]")?.addEventListener("click", open);
+      addEventListener("keydown", (event) => { if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") { event.preventDefault(); open(); } });
+      input?.addEventListener("input", () => render(input.value));
+    </script>
+  </body>
+</html>

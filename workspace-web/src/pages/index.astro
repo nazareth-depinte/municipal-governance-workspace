@@ -1,0 +1,15 @@
+---
+import AppLayout from "../layouts/AppLayout.astro";
+import Icon from "../components/Icon.astro";
+import pages from "../generated/pages.json";
+import registry from "../generated/registry.json";
+const publicRepos = registry.filter((r) => r.visibility === "public").length;
+---
+<AppLayout title="Overview">
+  <div class="hero"><div><span class="eyebrow">A municipal operating layer</span><h1>A town that can<br/>show its working.</h1><p>Local knowledge, explicit authority, traceable decisions, and agents that assist without acquiring public power.</p></div><div class="seal"><span>9840</span><small>EXPERIMENT<br/>01</small></div></div>
+  <div class="notice"><Icon name="shield"/><span><strong>This is an independent prototype.</strong> It confers no authority, processes no citizen data, and is not an official municipal government service.</span></div>
+  <section><div class="section-head"><div><span class="eyebrow">System at a glance</span><h2>A municipal network, not a central brain</h2></div><a href="/architecture/">Read full architecture →</a></div><div class="metrics"><div><strong>{registry.length}</strong><span>starter repositories</span></div><div><strong>{publicRepos}</strong><span>public by design</span></div><div><strong>{pages.length}</strong><span>approved public pages</span></div><div><strong>0</strong><span>autonomous authorities</span></div></div></section>
+  <section><div class="section-head"><div><span class="eyebrow">Operating model</span><h2>From signal to accountable outcome</h2></div></div><div class="flow">{["Signal","Competence","Evidence","Review","Human decision","Delivery","Audit","Outcome"].map((step,i)=><div><span>{String(i+1).padStart(2,"0")}</span><strong>{step}</strong></div>)}</div></section>
+  <section><div class="section-head"><div><span class="eyebrow">Democratic safeguards</span><h2>Agents work inside boundaries</h2></div></div><div class="cards"><a href="/authority/"><Icon name="scale"/><h3>Authority is explicit</h3><p>Access, capability, and repository writes never create a lawful mandate.</p></a><a href="/repositories/"><Icon name="lock"/><h3>Information zones stay separate</h3><p>Public, official-use, protected, and restricted information use different systems.</p></a><a href="/architecture/"><Icon name="building"/><h3>Institutions remain sovereign</h3><p>The root coordinates protocols and discovery. Legal competence decides who may act.</p></a></div></section>
+</AppLayout>
+

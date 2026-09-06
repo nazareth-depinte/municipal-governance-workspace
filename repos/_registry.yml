@@ -1,0 +1,31 @@
+version: 1
+organization: nazareth-depinte
+repositories:
+  - name: municipal-governance-workspace
+    visibility: public
+    local: .
+    remote: https://github.com/nazareth-depinte/municipal-governance-workspace.git
+    purpose: Municipal architecture, public knowledge, participation, repository registry, and human interface.
+    data_classification: public
+    owner: experimental-steering-group
+  - name: municipal-official-operations
+    visibility: private
+    local: repos/official-operations
+    remote: https://github.com/nazareth-depinte/municipal-official-operations.git
+    purpose: Internal coordination, draft matters, restricted operational metadata, and protected-system references.
+    data_classification: official-use-only
+    owner: authorized-government-operators
+  - name: municipal-oversight
+    visibility: public
+    local: repos/oversight
+    remote: https://github.com/nazareth-depinte/municipal-oversight.git
+    purpose: Audit findings, algorithm register, impact assessments, incidents, and remediation tracking.
+    data_classification: public-with-redaction-gate
+    owner: independent-oversight
+  - name: municipal-service-platform
+    visibility: public
+    local: repos/service-platform
+    remote: https://github.com/nazareth-depinte/municipal-service-platform.git
+    purpose: Reusable service code, schemas, adapters, tests, and deployment blueprints without citizen data or secrets.
+    data_classification: public
+    owner: public-digital-platform

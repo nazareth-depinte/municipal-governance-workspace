@@ -1,0 +1,9 @@
+repos/*
+!repos/_registry.yml
+workspace-web/node_modules/
+workspace-web/dist/
+workspace-web/.astro/
+workspace-web/src/generated/*.json
+.env*
+.DS_Store
+

@@ -1,0 +1,8 @@
+---
+import AppLayout from "../layouts/AppLayout.astro";
+import { marked } from "marked";
+import pages from "../generated/pages.json";
+const page = pages.find((p) => p.sourcePath === "AUTHORITY.md");
+---
+<AppLayout title="Authority" section="authority"><div class="page-head"><span class="eyebrow">Permission is not power</span><h1>Authority model</h1><p>What agents may observe, prepare, recommend, operate, and never decide.</p></div><article class="document" set:html={marked.parse(page?.body ?? "")}/></AppLayout>
+
