@@ -1,16 +1,18 @@
 ---
 title: Voorstel voor bronbestanden in R2
 updated: 2026-09-09
-status: voorstel-niet-geimplementeerd
+status: uitgevoerd-en-geverifieerd
 agent_role: opslagarchitect
 agent_system: OpenAI Codex / GPT-6
-reviewer: gebruiker-nog-te-beoordelen
+reviewer: gebruiker-opdrachtgever
 disposition: analyse-op-verzoek
 ---
 
 # Bronbestanden verplaatsen naar R2
 
-De private website-repository bevat ongeveer 1,37 GiB bronbestanden onder `public/source-files/`. Vooral PDF's bepalen de omvang. R2 is een passende kandidaat voor deze bestanden; code, gestructureerde inhoud, bronverwijzingen en een controlemanifest blijven in Git. Dit document is een voorstel: er is nog geen bucket aangemaakt, bestand verwijderd of Git-historie herschreven.
+**Uitgevoerd en geverifieerd op 9 september 2026, na expliciete toestemming van de gebruiker.** Alle 1.182 R2-objecten (1.181 websitebestanden plus het archief) zijn teruggelezen en op SHA-256 gecontroleerd; de testsite is actief achter de bestaande Access-policy. Een volledige verse GitHub-clone meet 6,29 MiB packed Git-data, tegenover circa 1,36 GiB vóór de schoonmaak (99,55% kleiner). De implementatie verplaatst ook het private bronarchief (1.958 bestanden in één gecontroleerde tar) naar R2. Operationele instructies en validatierapporten staan in de private website-repository: `R2-STORAGE.md`, `reports/r2-migration.json` en `reports/r2-history-migration.json`. Onderstaande tekst bewaart de oorspronkelijke afweging; de actuele overdrachtsinstructie staat in [WORKSPACE-OVERDRACHT.md](../WORKSPACE-OVERDRACHT.md).
+
+De private website-repository bevat ongeveer 1,33 GiB bronbestanden onder `public/source-files/`. Vooral PDF's bepalen de omvang. R2 is een passende kandidaat voor deze bestanden; code, gestructureerde inhoud, bronverwijzingen en een controlemanifest blijven in Git. De onderstaande fasering was het voorstel vóór de uitvoeringsopdracht; de uitvoeringsstatus wordt in de genoemde rapporten vastgelegd.
 
 ## Gemeten omvang
 
@@ -48,7 +50,7 @@ Behoud de huidige hashgebaseerde bestandsnamen. Leg per object de objectkey, SHA
 
 Bestanden verwijderen in een nieuwe commit maakt eerdere commits niet kleiner. Een gewone volledige clone blijft oude bestandsversies ophalen. Voor directe vermindering op een nieuwe computer is een shallow clone een tijdelijke optie zodra de actuele tree geen grote bestanden meer bevat. Structurele verkleining vraagt een afzonderlijk geplande historieschoonmaak of een nieuwe repository.
 
-Historieschoonmaak verandert commit-ID's en vereist gecoördineerde pushes en hernieuwde checkouts. Dit hoort niet stilzwijgend bij de huidige synchronisatie. Leg eerst vast welke branches en tags behouden blijven, maak een gecontroleerde back-up en stem de omschakeling met alle gebruikers van de repository af.
+Historieschoonmaak verandert commit-ID's en vereist gecoördineerde pushes en hernieuwde checkouts. Deze afzonderlijke historieschoonmaak is inmiddels expliciet toegestaan door de gebruiker. Leg eerst vast welke branches en tags behouden blijven, maak een gecontroleerde back-up en stem de omschakeling met alle gebruikers van de repository af.
 
 De huidige Git-synchronisatie blijft een afzonderlijke overdracht van de bestaande werkstand. Een latere R2-migratie vereist naast GitHub-toegang ook geautoriseerde toegang tot de objecten voor lokaal ontwikkelen.
 

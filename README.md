@@ -22,3 +22,5 @@ cd municipal-governance-workspace
 bash scripts/clone-repos.sh
 cd workspace-web && npm install && npm run dev
 ```
+
+The municipal website stores large source files in private R2 storage. Its [setup guide](docs/WORKSPACE-OVERDRACHT.md) includes the authenticated download step and the fresh-clone requirement after the September 2026 history cleanup.
