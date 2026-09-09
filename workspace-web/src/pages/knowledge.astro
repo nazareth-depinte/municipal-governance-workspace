@@ -1,6 +1,6 @@
 ---
 import AppLayout from "../layouts/AppLayout.astro";
 import pages from "../generated/pages.json";
+import { hrefFor } from "../lib/content-routes";
 ---
-<AppLayout title="Public knowledge" section="public"><div class="page-head"><span class="eyebrow">Approved public projection</span><h1>Public knowledge</h1><p>Only allowlisted material enters this interface. Protected and official-use repositories have separate indexes.</p></div><div class="knowledge-table"><div class="table-row header"><span>Document</span><span>Section</span><span>Status</span><span>Source</span></div>{pages.map((page)=><a class="table-row" href={page.sourcePath === "docs/architecture/GOVERNANCE-ARCHITECTURE.md" ? "/architecture/" : page.sourcePath === "AUTHORITY.md" ? "/authority/" : "#"}><span><strong>{page.title}</strong><small>{page.description}</small></span><span>{page.section}</span><span>{page.status}</span><code>{page.sourcePath}</code></a>)}</div></AppLayout>
-
+<AppLayout title="Public knowledge" section="public"><div class="page-head"><span class="eyebrow">Allowlisted public projection</span><h1>Public knowledge</h1><p>Only allowlisted material enters this interface. Status labels distinguish active records from proposals awaiting human review.</p></div><div class="knowledge-table"><div class="table-row header"><span>Document</span><span>Section</span><span>Status</span><span>Source</span></div>{pages.map((page)=><a class="table-row" href={hrefFor(page.sourcePath)}><span><strong>{page.title}</strong><small>{page.description}</small></span><span>{page.section}</span><span>{page.status}</span><code>{page.sourcePath}</code></a>)}</div></AppLayout>

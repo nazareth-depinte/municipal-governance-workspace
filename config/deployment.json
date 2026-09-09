@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "environment": "test",
+  "cloudflare": {
+    "accountId": "781694b62c702d02bf435ce9c9ac76f9",
+    "zoneId": "af75d125ea6fdb3dfc548e2a5cba45d4",
+    "hostname": "website.nazarethdepinte.net",
+    "accessEmailDomains": [
+      "nazarethdepinte.be"
+    ],
+    "accessOrganizationName": "Nazareth-De Pinte · Testomgeving"
+  },
+  "onePassword": {
+    "vaultId": "37b26v76iygykufngn3zvyxani",
+    "cloudflareApiTokenRef": "op://37b26v76iygykufngn3zvyxani/7ewnozh3e36xm34nm2rl7tlfle/credential",
+    "cloudflareAccessEmailsRef": "op://37b26v76iygykufngn3zvyxani/3hckfdgvjiypkjla2iec7qxjkq/allowed_emails"
+  }
+}

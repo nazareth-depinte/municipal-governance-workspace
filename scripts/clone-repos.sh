@@ -17,4 +17,4 @@ clone_repo() {
 clone_repo https://github.com/nazareth-depinte/municipal-official-operations.git repos/official-operations
 clone_repo https://github.com/nazareth-depinte/municipal-oversight.git repos/oversight
 clone_repo https://github.com/nazareth-depinte/municipal-service-platform.git repos/service-platform
-
+clone_repo https://github.com/nazareth-depinte/municipal-website.git repos/municipal-website

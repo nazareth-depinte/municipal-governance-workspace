@@ -14,6 +14,8 @@ Start with [the complete architecture](docs/architecture/GOVERNANCE-ARCHITECTURE
 
 ## Local setup
 
+Requires Git, Node.js >=22.12.0, and GitHub access to the private website and operations repositories. The clone script includes all four nested repositories. See [working on another computer](docs/WORKSPACE-OVERDRACHT.md) for branches, startup commands, and local configuration.
+
 ```sh
 git clone https://github.com/nazareth-depinte/municipal-governance-workspace.git
 cd municipal-governance-workspace

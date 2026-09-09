@@ -1,0 +1,41 @@
+---
+import AppLayout from "../../layouts/AppLayout.astro";
+import { marked } from "marked";
+import pages from "../../generated/pages.json";
+
+export function getStaticPaths() {
+  return pages
+    .filter((page) => page.section === "projects" && page.projectId)
+    .map((page) => ({ params: { slug: page.sourcePath.split("/").pop()?.replace(/\.md$/, "") }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const projectBody = page.body.replace(/^# .+\n/m, '').replace(
+  /\]\(\.\.\/evidence\/2026-09-06-digitale-dienstverlening\/diensteninventaris\.csv\)/g,
+  '](/p1/diensteninventaris.csv)',
+).replace(
+  /\]\(\.\.\/evidence\/([^)#]+)\.md(#[^)]+)?\)/g,
+  (_match: string, path: string, hash = "") => `](/knowledge/evidence/${path}/${hash})`,
+);
+const html = marked.parse(projectBody);
+---
+<AppLayout title={page.title} section="projects" description={page.summary}>
+  <a class="back-link" href="/projects/">← Alle projecten</a>
+  <div class="page-head project-detail-head">
+    <div class="project-kicker"><span>Project</span><span class="status-pill">{page.stage}</span></div>
+    <h1>{page.title.replace(/^P\d+\s+—\s+/, "")}</h1>
+    <p>{page.summary}</p>
+    <div class="project-facts"><div><small>Volgende oplevering</small><strong>{page.firstRelease}</strong></div><div><small>Werkpakket</small><strong>{page.timebox}</strong></div><div><small>Beschikbaarheid</small><strong>{page.publicationLabel ?? "Geen ingebruikname toegestaan"}</strong></div></div>
+  </div>
+  <div class="project-deliverables">
+    <div><span class="eyebrow">Actuele stand · {page.updated}</span><h2>{page.deliveryTitle}</h2><p>{page.deliverySummary}</p><p><strong>Volgende stap:</strong> {page.nextStep}</p></div>
+    <div class="project-deliverable-links">
+      {page.demoUrl && <a class="workspace-action" href={page.demoUrl}>Open de beveiligde demo ↗</a>}
+      {page.localUrl && <a href={page.localUrl}>Open de lokale versie ↗</a>}
+      <a href="/briefings/demo-gemeenteteam/">Demoplan voor het gemeenteteam →</a>
+      {page.projectId === 'P1' && <><a href="/projects/publieke-website/inventarisatie/">Crawlmetadata en uitzonderingen →</a><a href="/repositories/">Repositoryregistratie →</a><a href="/knowledge/docs/architecture/SECRETS-EN-TESTDEPLOYMENT/">Hosting en toegangscontrole →</a></>}
+      {page.projectId === 'P2' && <a href="/knowledge/evidence/2026-09-06-uit-integratie/ADVIES/">UiT-integratieadvies →</a>}
+    </div>
+  </div>
+  <article class="document project-document" set:html={html}/>
+</AppLayout>

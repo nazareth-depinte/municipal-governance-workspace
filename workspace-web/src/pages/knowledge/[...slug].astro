@@ -1,0 +1,23 @@
+---
+import AppLayout from "../../layouts/AppLayout.astro";
+import { marked } from "marked";
+import pages from "../../generated/pages.json";
+
+export function getStaticPaths() {
+  return pages
+    .filter((page) => !page.sourcePath.startsWith("briefings/") && !page.sourcePath.startsWith("projects/") && !["AUTHORITY.md", "docs/architecture/GOVERNANCE-ARCHITECTURE.md"].includes(page.sourcePath))
+    .map((page) => ({ params: { slug: page.sourcePath.replace(/\.md$/, "").replace(/\/README$/, "") }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const html = marked.parse(page.body);
+---
+<AppLayout title={page.title} section="public" description={page.description}>
+  <a class="back-link" href="/knowledge/">← Public knowledge</a>
+  <div class="page-head">
+    <span class="eyebrow">{page.section} · {page.status}</span>
+    <h1>{page.title}</h1>
+    <p><code>{page.sourcePath}</code></p>
+  </div>
+  <article class="document" set:html={html}/>
+</AppLayout>

@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/projects.css";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/geist-mono";
 import Icon from "../components/Icon.astro";
@@ -7,6 +8,8 @@ interface Props { title: string; section?: string; description?: string }
 const { title, section = "home", description = "Experimental operating layer for transparent, accountable government." } = Astro.props;
 const nav = [
   ["home", "Overview", "/", "home"],
+  ["projects", "Projects", "/projects/", "projects"],
+  ["briefings", "Briefings", "/briefings/", "document"],
   ["architecture", "Architecture", "/architecture/", "building"],
   ["repositories", "Repositories", "/repositories/", "code"],
   ["authority", "Authority", "/authority/", "scale"],

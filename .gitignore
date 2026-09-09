@@ -5,5 +5,8 @@ workspace-web/dist/
 workspace-web/.astro/
 workspace-web/src/generated/*.json
 .env*
+!.env.example
 .DS_Store
-
+__pycache__/
+*.pyc
+workspace-web/public/p1-crawl-status.json

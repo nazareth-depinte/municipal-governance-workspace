@@ -1,6 +1,15 @@
 version: 1
 organization: nazareth-depinte
 repositories:
+  - name: municipal-website
+    visibility: private
+    local: repos/municipal-website
+    remote: https://github.com/nazareth-depinte/municipal-website.git
+    preview: http://127.0.0.1:4328/
+    deployment: https://website.nazarethdepinte.net/
+    purpose: Zelfstandige Astro-website met contentcollecties en agenda. Werkend onafhankelijk testprototype achter Cloudflare Access; geen officiële dienstverlening.
+    data_classification: public-source-content-in-private-development-repository
+    owner: public-digital-platform
   - name: municipal-governance-workspace
     visibility: public
     local: .
@@ -26,6 +35,8 @@ repositories:
     visibility: public
     local: repos/service-platform
     remote: https://github.com/nazareth-depinte/municipal-service-platform.git
-    purpose: Reusable service code, schemas, adapters, tests, and deployment blueprints without citizen data or secrets.
+    preview: http://127.0.0.1:4328/meldpunt/
+    deployment: https://website.nazarethdepinte.net/meldpunt/
+    purpose: Herbruikbare dienstcode, met de zelfstandige meldpuntdemo in apps/meldpunt geïntegreerd in de Astro-website. Uitsluitend synthetische demodata; geen burgergegevens of secrets.
     data_classification: public
     owner: public-digital-platform

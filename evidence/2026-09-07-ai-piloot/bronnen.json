@@ -1,0 +1,13 @@
+{
+  "observedOn": "2026-09-07",
+  "role": "public-policy researcher",
+  "system": "OpenAI Codex / GPT-6",
+  "reviewer": "unassigned",
+  "disposition": "source register for independent draft analysis",
+  "sources": [
+    {"id":"progress-2026","title":"Opvolgingsrapport 2026 - Verbindend bestuur","url":"https://nazarethdepinte.beleidsportaal.be/opvolgingsrapport---2026/programma/verbindend-bestuur","publishedOn":"2026-07-31","period":"first half of 2026","type":"official self-reported progress","method":"direct browser reading of public report","sections":["PD2-01","PD2-02"],"supports":["Copilot innovation hub","AI literacy","team IDEE process automation","Flemish service integrations","Azure data platform","planned dashboards","archive preparation"]},
+    {"id":"plan-2026-mjpa1","title":"Meerjarenplan 2026 - MJPA1 - Verbindend bestuur","url":"https://nazarethdepinte.beleidsportaal.be/meerjarenplan---2026---mjpa1/programma/verbindend-bestuur","publishedOn":"2026-08-03","type":"official policy plan","method":"direct browser reading in preceding outreach research, same session","sections":["PD1-01","PD2-02"],"supports":["accessible service","AI pilot group","smart website forms","innovation objectives"]},
+    {"id":"event-form","title":"Aanvraagformulier voor evenement","url":"https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement","publishedOn":null,"type":"official service instructions","method":"direct browser reading in preceding outreach research, same session; no form submitted","supports":["single-session completion instruction","two-month preparation instruction","drawing and co-organiser information"]}
+  ],
+  "limitations": ["No internal pilot documents or accounts inspected","No procurement award or open budget confirmed","No independent audit of reported implementation","Named professional contacts are in the private outreach package"]
+}

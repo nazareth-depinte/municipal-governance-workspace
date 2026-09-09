@@ -1,0 +1,33 @@
+---
+import AppLayout from '../../../layouts/AppLayout.astro';
+---
+<AppLayout title="P1 — Website-inventarisatie" section="projects">
+  <a class="back-link" href="/projects/publieke-website/">← P1 · Publieke website</a>
+  <div class="page-head"><span class="eyebrow">P1 · Bronnenonderzoek</span><h1>De huidige website,<br/>in kaart.</h1><p>Een hervatbare inventarisatie van de publieke pagina’s, documenten en bestanden van nazarethdepinte.be. De website gebruikt al een lokale contentsnapshot. De resterende captures en inhoudsbeoordeling zijn afzonderlijke werkpakketten.</p></div>
+  <div class="crawl-action-bar"><span class="crawl-state" role="status" data-crawl-state>Voortgang ophalen…</span><a class="workspace-action" href="https://website.nazarethdepinte.net/">Open de beveiligde website ↗</a></div>
+  <div class="metrics crawl-metrics"><div><strong data-crawl-discovered>—</strong><span>ontdekte URL’s</span></div><div><strong data-crawl-captured>—</strong><span>vastgelegde resources</span></div><div><strong data-crawl-pending>—</strong><span>nog te verwerken</span></div><div><strong data-crawl-failed>—</strong><span>fouten of uitzonderingen</span></div></div>
+  <p class="crawl-update" data-crawl-updated>Deze pagina controleert de voortgang elke 15 seconden zolang ze openstaat.</p>
+  <section><div class="section-head"><div><span class="eyebrow">Dekking</span><h2>Wat zit in de inventarisatie?</h2></div></div><dl class="crawl-breakdown"><div><dt>Sitemap</dt><dd data-crawl-sitemap>—</dd></div><div><dt>Pagina’s</dt><dd data-crawl-pages>—</dd></div><div><dt>Documenten</dt><dd data-crawl-documents>—</dd></div><div><dt>Assets en huisstijl</dt><dd data-crawl-assets>—</dd></div><div><dt>Robots-uitzonderingen</dt><dd data-crawl-excluded>—</dd></div></dl></section>
+  <article class="document"><h2>Werkwijze en volledigheid</h2><p>De crawl begint bij de volledige sitemap en volgt daarna ontdekte publieke links binnen de gemeentelijke website. Oude Nazareth- en De Pinte-hostnamen worden genormaliseerd naar het fusiedomein. HTML, documenten en rechtstreeks ontdekte assets worden lokaal vastgelegd, inclusief status, datum en hash. Externe dienstverleners worden als links geïnventariseerd; hun systemen vallen buiten deze crawl.</p><p>De website vraagt in robots.txt een wachttijd van 10 seconden. De crawler respecteert die wachttijd en de uitsluitingen, voert één verzoek tegelijk uit en wacht langer na een 429- of 503-respons. Formulieren worden niet ingediend. Willekeurige zoek- en filtercombinaties worden uitgesloten om oneindige URL-reeksen te voorkomen.</p><p>Er geldt een limiet van 20 MB per bestand. Grotere bestanden, fouten, uitgesloten routes, JavaScript-afhankelijke inhoud en externe applicaties blijven expliciete migratie-uitzonderingen. Een voltooide wachtrij is daarom geen garantie dat elke transactie of dynamische toestand is vastgelegd.</p><h2>Van bron naar nieuwe website</h2><ol><li>Publieke website inventariseren en uitzonderingen hercontroleren.</li><li>Pagina’s, duplicaten, redirects, documenten en diensteneigenaars in kaart brengen.</li><li>Inhoud en hergebruikrechten beoordelen; persoonsgegevens niet overnemen in publieke Git-bestanden.</li><li>Beoordeelde inhoud migreren naar het nieuwe ontwerp en oude links testen.</li></ol><h2>Opslag en verantwoording</h2><p>De private website-repository bevat de geïmporteerde publieke broninhoud, bestanden en het bronarchief. De werkende crawler gebruikt daarnaast een tijdelijke map. Het dashboard in deze publieke workspace ontvangt alleen voortgangsmetadata. Ruwe broncaptures worden niet als archief naar Cloudflare gedeployed.</p><p>Bron: gemeentelijke sitemap, robots.txt, homepage en ontdekte publieke links; start 6 september 2026. Agentrol: publieke-website-inventarisatie en webontwikkeling. Systeem: OpenAI Codex / GPT-6. Menselijke reviewer: nog niet toegewezen. Dispositie: inventarisatie en zelfstandige website achter Access; geen officiële dienstverlening.</p></article>
+  <script>
+    async function refreshCrawl() {
+      const label = document.querySelector<HTMLElement>('[data-crawl-state]')!;
+      try {
+        const response = await fetch('/p1-crawl-status.json', { cache:'no-store' });
+        if (!response.ok) throw new Error('status_unavailable');
+        const data = await response.json();
+        const set = (key: string, value: number | string) => { const el = document.querySelector(`[data-crawl-${key}]`); if(el) el.textContent = typeof value === 'number' ? value.toLocaleString('nl-BE') : value; };
+        const stale = Date.now() - Date.parse(data.updated_at) > 180000;
+        const labels: Record<string,string> = { running:'Inventarisatie loopt', paused:'Inventarisatie gepauzeerd', finished:'Wachtrij volledig verwerkt', finished_with_exclusions:'Wachtrij verwerkt — uitzonderingen beoordelen' };
+        label.textContent = stale && data.state === 'running' ? 'Geen recente update — proces controleren' : labels[data.state] ?? data.state;
+        set('discovered',data.discovered); set('captured',data.counts.captured ?? 0); set('pending',data.counts.pending ?? 0); set('failed',data.counts.failed ?? 0);
+        set('sitemap',data.sitemap_entries); set('pages',data.kinds.page ?? 0); set('documents',data.kinds.document ?? 0); set('assets',(data.kinds.asset ?? 0) + (data.kinds.brand ?? 0)); set('excluded',data.counts.robots_excluded ?? 0);
+        set('updated',`Laatste meting: ${new Date(data.updated_at).toLocaleString('nl-BE')} · één verzoek per ${data.delay_seconds} seconden · aantallen kunnen toenemen door nieuw ontdekte links.`);
+      } catch {
+        label.textContent = 'Crawlstatus momenteel niet beschikbaar';
+      }
+    }
+    refreshCrawl();
+    setInterval(() => { if(!document.hidden) refreshCrawl(); },15000);
+  </script>
+</AppLayout>

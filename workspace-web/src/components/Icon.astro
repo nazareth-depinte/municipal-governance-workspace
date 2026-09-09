@@ -10,8 +10,8 @@ const paths: Record<string, string> = {
   code: "m8 8-4 4 4 4m8-8 4 4-4 4m-5-11-2 14",
   search: "m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z",
   document: "M6 2h8l4 4v16H6V2Zm8 0v5h5M9 12h6m-6 4h6",
+  projects: "M4 6h6l2 2h8v12H4V6Zm0 5h16M8 15h8m-8 3h5",
   shield: "M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Zm-3-10 2 2 4-5"
 };
 ---
 <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={paths[name] ?? paths.document} /></svg>
-

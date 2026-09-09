@@ -1,0 +1,7 @@
+---
+export function getStaticPaths() {
+  return ["", "contact", "diensten", "over-dit-ontwerp", "diensten/attesten", "diensten/afspraak", "diensten/verhuizen", "diensten/afvalkalender", "diensten/recyclagepark", "diensten/iets-melden", "diensten/afval-niet-opgehaald", "diensten/straatverlichting", "diensten/openbaar-domein", "diensten/evenement", "diensten/zaal", "diensten/materiaal", "diensten/tickets", "diensten/activiteiten", "diensten/kinderopvang", "diensten/school", "diensten/bibliotheek", "diensten/activiteit-aankondigen", "diensten/vereniging", "diensten/omgevingsvergunning", "diensten/gemeenteraad", "diensten/raadsopnames", "diensten/vacatures", "diensten/lokale-jobs", "diensten/kooplokaalbon", "diensten/vrijwilligerswerk", "diensten/inspraak", "diensten/klacht"].map(path => ({ params: { path: path || undefined }, props: { target: `http://127.0.0.1:4328/${path ? path + '/' : ''}` } }));
+}
+const { target } = Astro.props;
+---
+<!doctype html><html lang="nl-BE"><head><meta charset="utf-8"/><meta name="robots" content="noindex"/><meta http-equiv="refresh" content={`0;url=${target}`}/><title>Website verhuisd</title></head><body><p>Het websiteontwerp heeft een eigen repository en adres.</p><a href={target} id="website-target">Open de publieke website</a><script>const link = document.querySelector<HTMLAnchorElement>('#website-target'); if (link) location.replace(link.href + location.search + location.hash);</script></body></html>

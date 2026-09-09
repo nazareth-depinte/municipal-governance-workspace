@@ -1,0 +1,4 @@
+---
+const target = 'http://127.0.0.1:4328/agenda/';
+---
+<!doctype html><html lang="nl-BE"><head><meta charset="utf-8"/><meta name="robots" content="noindex"/><meta http-equiv="refresh" content={`0;url=${target}`}/><title>Website verhuisd</title></head><body><p>Het websiteontwerp heeft een eigen repository en adres.</p><a href={target} id="website-target">Open de publieke website</a><script>const link = document.querySelector<HTMLAnchorElement>('#website-target'); if (link) location.replace(link.href + location.search + location.hash);</script></body></html>

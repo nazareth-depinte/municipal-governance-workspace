@@ -1,0 +1,816 @@
+{
+  "metadata": {
+    "checked_at": "2026-09-06T15:17:11.111871+00:00",
+    "role": "onderzoeker digitale dienstverlening; alleen publieke controles",
+    "system": "OpenAI Codex / GPT-5",
+    "reviewer": null,
+    "disposition": "concept; menselijke beoordeling openstaand",
+    "method": "curl GET, redirects gevolgd, compressie toegestaan, 30 s timeout, 0,75 s pauze tussen controles",
+    "limitations": "Transportmeting vanaf één host; geen Core Web Vitals, velddata, authenticatie, formulierinzending of volledige crawler.",
+    "script_sha256": "a3b0ac52e109e74099596b49b7d539db7d03c53810255067455cb8dba05b7602"
+  },
+  "critical_entry_points": [
+    {
+      "requested_url": "https://www.nazarethdepinte.be/",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/",
+      "ttfb_seconds": 0.282493,
+      "total_seconds": 0.323875,
+      "compressed_body_bytes": 38910,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "homepage"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/menu",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/menu",
+      "ttfb_seconds": 0.261807,
+      "total_seconds": 0.270209,
+      "compressed_body_bytes": 33883,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "menu"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/zoeken",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/zoeken",
+      "ttfb_seconds": 1.131013,
+      "total_seconds": 1.135735,
+      "compressed_body_bytes": 38235,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "zoeken"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/digitaal-loket",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.egovflow.be/",
+      "ttfb_seconds": 0.445493,
+      "total_seconds": 0.446112,
+      "compressed_body_bytes": 1006,
+      "redirects": 1,
+      "curl_exit": 0,
+      "error": "",
+      "label": "digitaal-loket-route"
+    },
+    {
+      "requested_url": "https://nazarethdepinte.egovflow.be/",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.egovflow.be/",
+      "ttfb_seconds": 0.230575,
+      "total_seconds": 0.230887,
+      "compressed_body_bytes": 1006,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "eGovFlow-actueel"
+    },
+    {
+      "requested_url": "https://nazareth.egovflow.be/",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.egovflow.be/",
+      "ttfb_seconds": 1.136921,
+      "total_seconds": 1.137458,
+      "compressed_body_bytes": 1006,
+      "redirects": 1,
+      "curl_exit": 0,
+      "error": "",
+      "label": "eGovFlow-oude-link"
+    },
+    {
+      "requested_url": "https://nazarethdepinte.egovflow.be/www.nazarethdepinte.be/privacyverklaring",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.egovflow.be/www.nazarethdepinte.be/privacyverklaring",
+      "ttfb_seconds": 0.274658,
+      "total_seconds": 0.275014,
+      "compressed_body_bytes": 1006,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "eGovFlow-privacy-zichtbare-href"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/afspraak-maken",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/afspraak-maken",
+      "ttfb_seconds": 0.303447,
+      "total_seconds": 0.317498,
+      "compressed_body_bytes": 33836,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "afspraken"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/webshop-en-tickets",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/webshop-en-tickets",
+      "ttfb_seconds": 0.288954,
+      "total_seconds": 0.289759,
+      "compressed_body_bytes": 33517,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "webshop-wegwijzer"
+    },
+    {
+      "requested_url": "https://nazarethdepinte.recreatex.be/",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.recreatex.be/",
+      "ttfb_seconds": 0.729564,
+      "total_seconds": 0.768571,
+      "compressed_body_bytes": 38898,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "recreatex"
+    },
+    {
+      "requested_url": "https://shop.nazarethdepinte.be/",
+      "status": 200,
+      "effective_url": "https://shop.nazarethdepinte.be/",
+      "ttfb_seconds": 0.592785,
+      "total_seconds": 0.593129,
+      "compressed_body_bytes": 679,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "luwio"
+    },
+    {
+      "requested_url": "https://nazarethdepinte.myshopify.com/",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.myshopify.com/",
+      "ttfb_seconds": 0.151358,
+      "total_seconds": 0.244372,
+      "compressed_body_bytes": 25158,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "shopify"
+    },
+    {
+      "requested_url": "https://shop.gift2give.be/nazarethdepinte",
+      "status": 200,
+      "effective_url": "https://shop.gift2give.be/nazarethdepinte",
+      "ttfb_seconds": 0.244436,
+      "total_seconds": 0.245024,
+      "compressed_body_bytes": 2549,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "gift2give"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden",
+      "ttfb_seconds": 0.173802,
+      "total_seconds": 0.175594,
+      "compressed_body_bytes": 33600,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "meldpunt"
+    },
+    {
+      "requested_url": "https://www.ivmmilieubeheer.be/e-loket/meldingsformulier-over-inzamelingen",
+      "status": 200,
+      "effective_url": "https://www.ivmmilieubeheer.be/e-loket/meldingsformulier-over-inzamelingen",
+      "ttfb_seconds": 0.845148,
+      "total_seconds": 0.84836,
+      "compressed_body_bytes": 15068,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "ivm-melding"
+    },
+    {
+      "requested_url": "https://straatlampen.fluvius.be/",
+      "status": 200,
+      "effective_url": "https://straatlampen.fluvius.be/",
+      "ttfb_seconds": 0.212783,
+      "total_seconds": 0.22067,
+      "compressed_body_bytes": 10316,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "fluvius-straatlichten"
+    },
+    {
+      "requested_url": "https://nazareth-depinte.spotbooking.be/#/aanvraag/new",
+      "status": 200,
+      "effective_url": "https://nazareth-depinte.spotbooking.be/#/aanvraag/new",
+      "ttfb_seconds": 0.266462,
+      "total_seconds": 0.266789,
+      "compressed_body_bytes": 7016,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "spotbooking"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+      "ttfb_seconds": 0.392587,
+      "total_seconds": 0.394576,
+      "compressed_body_bytes": 37291,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "evenementenformulier"
+    },
+    {
+      "requested_url": "https://www.uitdatabank.be/login/nl",
+      "status": 200,
+      "effective_url": "https://www.uitdatabank.be/login/nl",
+      "ttfb_seconds": 0.267618,
+      "total_seconds": 0.314569,
+      "compressed_body_bytes": 20719,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "uitdatabank"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/vrije-tijd/uit-in",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/vrije-tijd/uit-in",
+      "ttfb_seconds": 1.528103,
+      "total_seconds": 1.530706,
+      "compressed_body_bytes": 40292,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "uitagenda"
+    },
+    {
+      "requested_url": "http://www.nazareth.be/agenda/search",
+      "status": 403,
+      "effective_url": "https://nazarethdepinte.be/agenda/search",
+      "ttfb_seconds": 0.795478,
+      "total_seconds": 0.797078,
+      "compressed_body_bytes": 37121,
+      "redirects": 2,
+      "curl_exit": 0,
+      "error": "",
+      "label": "oude-uit-zoeklink"
+    },
+    {
+      "requested_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+      "status": 200,
+      "effective_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+      "ttfb_seconds": 0.318753,
+      "total_seconds": 0.319175,
+      "compressed_body_bytes": 15839,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "raadpleegomgeving"
+    },
+    {
+      "requested_url": "https://streamings.streamovations.be/nazareth-de-pinte/",
+      "status": 200,
+      "effective_url": "https://streamings.streamovations.be/nazareth-de-pinte/",
+      "ttfb_seconds": 0.22879,
+      "total_seconds": 0.229164,
+      "compressed_body_bytes": 1517,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "raadstream"
+    },
+    {
+      "requested_url": "https://nazarethdepinte.consultatieomgeving.net/burger",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.consultatieomgeving.net/burger",
+      "ttfb_seconds": 0.215626,
+      "total_seconds": 0.289312,
+      "compressed_body_bytes": 39417,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "consultatieomgeving"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/vrije-tijd/over-nazareth-de-pinte/stratenplan",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/vrije-tijd/over-nazareth-de-pinte/stratenplan",
+      "ttfb_seconds": 0.282354,
+      "total_seconds": 0.304906,
+      "compressed_body_bytes": 33510,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "stratenplan"
+    },
+    {
+      "requested_url": "https://fusienazarethdepinte.paddlecms.net/sites/default/files/2025-02/Nazareth-De%20Pinte%20-%20stratenplan%202025.pdf",
+      "status": 200,
+      "effective_url": "https://fusienazarethdepinte.paddlecms.net/sites/default/files/2025-02/Nazareth-De%20Pinte%20-%20stratenplan%202025.pdf",
+      "ttfb_seconds": 0.291231,
+      "total_seconds": 1.938172,
+      "compressed_body_bytes": 6695670,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "stratenplan-staging-pdf"
+    },
+    {
+      "requested_url": "https://nazarethdepinte.bibliotheek.be/",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.bibliotheek.be/",
+      "ttfb_seconds": 0.297484,
+      "total_seconds": 0.59863,
+      "compressed_body_bytes": 463861,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "bibliotheek"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/leven-en-werken/vacatures",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/leven-en-werken/vacatures",
+      "ttfb_seconds": 0.271013,
+      "total_seconds": 0.272855,
+      "compressed_body_bytes": 35398,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "vacatures"
+    },
+    {
+      "requested_url": "https://www.jobsolutions.be/iframe/nazareth_de_pinte/vacatures",
+      "status": 200,
+      "effective_url": "https://www.jobsolutions.be/iframe/nazareth_de_pinte/vacatures",
+      "ttfb_seconds": 0.169522,
+      "total_seconds": 0.169892,
+      "compressed_body_bytes": 2500,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "jobsolutions"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/vrije-tijd/vrijwilligerswerk/vrijwilligerswerk-zoeken",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/vrije-tijd/vrijwilligerswerk/vrijwilligerswerk-zoeken",
+      "ttfb_seconds": 0.189038,
+      "total_seconds": 0.199435,
+      "compressed_body_bytes": 33842,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "vrijwilligers"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/bestuur/communicatie/schrijf-in-voor-onze-nieuwsbrief",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/bestuur/communicatie/schrijf-in-voor-onze-nieuwsbrief",
+      "ttfb_seconds": 0.179266,
+      "total_seconds": 0.215222,
+      "compressed_body_bytes": 33669,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "nieuwsbrief"
+    },
+    {
+      "requested_url": "https://opvang.vlaanderen/",
+      "status": 200,
+      "effective_url": "https://opvang.vlaanderen/",
+      "ttfb_seconds": 0.814103,
+      "total_seconds": 1.0712,
+      "compressed_body_bytes": 107650,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "opvang-vlaanderen"
+    },
+    {
+      "requested_url": "https://nazarethdepinte.aanmelden.in/",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.aanmelden.in/",
+      "ttfb_seconds": 0.428362,
+      "total_seconds": 0.428731,
+      "compressed_body_bytes": 2711,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "schoolaanmelding"
+    },
+    {
+      "requested_url": "https://www.depinte.be/",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/",
+      "ttfb_seconds": 0.413516,
+      "total_seconds": 0.448322,
+      "compressed_body_bytes": 38910,
+      "redirects": 1,
+      "curl_exit": 0,
+      "error": "",
+      "label": "oude-depinte-home"
+    },
+    {
+      "requested_url": "https://www.nazareth.be/",
+      "status": 200,
+      "effective_url": "https://nazarethdepinte.be/",
+      "ttfb_seconds": 0.440819,
+      "total_seconds": 0.462552,
+      "compressed_body_bytes": 38983,
+      "redirects": 1,
+      "curl_exit": 0,
+      "error": "",
+      "label": "oude-nazareth-home"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/leven-en-werken/burger",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/leven-en-werken/burger",
+      "ttfb_seconds": 0.252122,
+      "total_seconds": 0.263154,
+      "compressed_body_bytes": 33874,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "home-burgerzaken-link"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/leven-en-werken/welzijn-en-veiligheid",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/leven-en-werken/welzijn-en-veiligheid",
+      "ttfb_seconds": 0.256515,
+      "total_seconds": 0.257839,
+      "compressed_body_bytes": 35481,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "home-ocmw-link"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/toegankelijkheidsverklaring",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/toegankelijkheidsverklaring",
+      "ttfb_seconds": 0.287488,
+      "total_seconds": 0.289072,
+      "compressed_body_bytes": 35379,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "toegankelijkheid"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/robots.txt",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/robots.txt",
+      "ttfb_seconds": 0.27837,
+      "total_seconds": 0.278725,
+      "compressed_body_bytes": 734,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "robots"
+    },
+    {
+      "requested_url": "https://www.nazarethdepinte.be/sitemap.xml",
+      "status": 200,
+      "effective_url": "https://www.nazarethdepinte.be/sitemap.xml",
+      "ttfb_seconds": 0.262228,
+      "total_seconds": 0.263235,
+      "compressed_body_bytes": 27670,
+      "redirects": 0,
+      "curl_exit": 0,
+      "error": "",
+      "label": "sitemap"
+    }
+  ],
+  "performance_samples": {
+    "https://www.nazarethdepinte.be/": {
+      "runs": [
+        {
+          "requested_url": "https://www.nazarethdepinte.be/",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/",
+          "ttfb_seconds": 0.266826,
+          "total_seconds": 0.306966,
+          "compressed_body_bytes": 38910,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://www.nazarethdepinte.be/",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/",
+          "ttfb_seconds": 0.288873,
+          "total_seconds": 0.327298,
+          "compressed_body_bytes": 38910,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://www.nazarethdepinte.be/",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/",
+          "ttfb_seconds": 0.295556,
+          "total_seconds": 0.331921,
+          "compressed_body_bytes": 38910,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.288873,
+      "median_total_seconds": 0.327298,
+      "median_compressed_body_bytes": 38910
+    },
+    "https://www.nazarethdepinte.be/zoeken": {
+      "runs": [
+        {
+          "requested_url": "https://www.nazarethdepinte.be/zoeken",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/zoeken",
+          "ttfb_seconds": 0.985813,
+          "total_seconds": 1.005358,
+          "compressed_body_bytes": 38235,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://www.nazarethdepinte.be/zoeken",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/zoeken",
+          "ttfb_seconds": 0.949287,
+          "total_seconds": 0.976647,
+          "compressed_body_bytes": 38235,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://www.nazarethdepinte.be/zoeken",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/zoeken",
+          "ttfb_seconds": 1.052271,
+          "total_seconds": 1.053453,
+          "compressed_body_bytes": 38237,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.985813,
+      "median_total_seconds": 1.005358,
+      "median_compressed_body_bytes": 38235
+    },
+    "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement": {
+      "runs": [
+        {
+          "requested_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+          "ttfb_seconds": 0.468386,
+          "total_seconds": 0.47003,
+          "compressed_body_bytes": 37306,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+          "ttfb_seconds": 0.358543,
+          "total_seconds": 0.360269,
+          "compressed_body_bytes": 37303,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+          "status": 200,
+          "effective_url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+          "ttfb_seconds": 0.363337,
+          "total_seconds": 0.404271,
+          "compressed_body_bytes": 37295,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.363337,
+      "median_total_seconds": 0.404271,
+      "median_compressed_body_bytes": 37303
+    },
+    "https://nazarethdepinte.egovflow.be/": {
+      "runs": [
+        {
+          "requested_url": "https://nazarethdepinte.egovflow.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.egovflow.be/",
+          "ttfb_seconds": 0.304865,
+          "total_seconds": 0.332308,
+          "compressed_body_bytes": 1006,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazarethdepinte.egovflow.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.egovflow.be/",
+          "ttfb_seconds": 0.218619,
+          "total_seconds": 0.226206,
+          "compressed_body_bytes": 1006,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazarethdepinte.egovflow.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.egovflow.be/",
+          "ttfb_seconds": 0.232848,
+          "total_seconds": 0.233317,
+          "compressed_body_bytes": 1006,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.232848,
+      "median_total_seconds": 0.233317,
+      "median_compressed_body_bytes": 1006
+    },
+    "https://nazarethdepinte.recreatex.be/": {
+      "runs": [
+        {
+          "requested_url": "https://nazarethdepinte.recreatex.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.recreatex.be/",
+          "ttfb_seconds": 0.68935,
+          "total_seconds": 0.797253,
+          "compressed_body_bytes": 38846,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazarethdepinte.recreatex.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.recreatex.be/",
+          "ttfb_seconds": 0.901456,
+          "total_seconds": 0.942255,
+          "compressed_body_bytes": 38808,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazarethdepinte.recreatex.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.recreatex.be/",
+          "ttfb_seconds": 0.828885,
+          "total_seconds": 0.873148,
+          "compressed_body_bytes": 38838,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.828885,
+      "median_total_seconds": 0.873148,
+      "median_compressed_body_bytes": 38838
+    },
+    "https://shop.nazarethdepinte.be/": {
+      "runs": [
+        {
+          "requested_url": "https://shop.nazarethdepinte.be/",
+          "status": 200,
+          "effective_url": "https://shop.nazarethdepinte.be/",
+          "ttfb_seconds": 0.459252,
+          "total_seconds": 0.45964,
+          "compressed_body_bytes": 679,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://shop.nazarethdepinte.be/",
+          "status": 200,
+          "effective_url": "https://shop.nazarethdepinte.be/",
+          "ttfb_seconds": 0.700178,
+          "total_seconds": 0.700508,
+          "compressed_body_bytes": 679,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://shop.nazarethdepinte.be/",
+          "status": 200,
+          "effective_url": "https://shop.nazarethdepinte.be/",
+          "ttfb_seconds": 0.42807,
+          "total_seconds": 0.42858,
+          "compressed_body_bytes": 679,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.459252,
+      "median_total_seconds": 0.45964,
+      "median_compressed_body_bytes": 679
+    },
+    "https://nazareth-depinte-raadpleegomgeving.csecho.be/": {
+      "runs": [
+        {
+          "requested_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+          "status": 200,
+          "effective_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+          "ttfb_seconds": 0.329569,
+          "total_seconds": 0.330796,
+          "compressed_body_bytes": 15839,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+          "status": 200,
+          "effective_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+          "ttfb_seconds": 0.272789,
+          "total_seconds": 0.27349,
+          "compressed_body_bytes": 15839,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+          "status": 200,
+          "effective_url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+          "ttfb_seconds": 0.271618,
+          "total_seconds": 0.27205,
+          "compressed_body_bytes": 15839,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.272789,
+      "median_total_seconds": 0.27349,
+      "median_compressed_body_bytes": 15839
+    },
+    "https://nazarethdepinte.bibliotheek.be/": {
+      "runs": [
+        {
+          "requested_url": "https://nazarethdepinte.bibliotheek.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.bibliotheek.be/",
+          "ttfb_seconds": 0.228349,
+          "total_seconds": 0.389124,
+          "compressed_body_bytes": 463861,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazarethdepinte.bibliotheek.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.bibliotheek.be/",
+          "ttfb_seconds": 0.209398,
+          "total_seconds": 0.45796,
+          "compressed_body_bytes": 463862,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        },
+        {
+          "requested_url": "https://nazarethdepinte.bibliotheek.be/",
+          "status": 200,
+          "effective_url": "https://nazarethdepinte.bibliotheek.be/",
+          "ttfb_seconds": 0.270161,
+          "total_seconds": 0.410382,
+          "compressed_body_bytes": 463860,
+          "redirects": 0,
+          "curl_exit": 0,
+          "error": ""
+        }
+      ],
+      "median_ttfb_seconds": 0.228349,
+      "median_total_seconds": 0.410382,
+      "median_compressed_body_bytes": 463861
+    }
+  }
+}

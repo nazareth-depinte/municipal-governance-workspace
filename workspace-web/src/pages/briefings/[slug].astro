@@ -1,0 +1,27 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import { Marked } from 'marked';
+import pages from '../../generated/pages.json';
+import { briefingLink } from '../../lib/content-routes';
+export function getStaticPaths() {
+  return pages.filter(page => page.section === 'briefings').map(page => ({params: {slug: page.sourcePath.split('/').pop()?.replace(/\.md$/, '')}, props: {page}}));
+}
+const { page } = Astro.props;
+const markdown = new Marked();
+markdown.use({walkTokens(token) { if (token.type === 'link') token.href = briefingLink(token.href, page.sourcePath); }});
+const html = markdown.parse(page.body);
+---
+<AppLayout title={page.title} section="briefings" description={page.summary}>
+  <div lang="nl-BE">
+    <a class="back-link" href="/briefings/">← Alle briefings</a>
+    <div class="page-head"><span class="eyebrow">{page.topic} · <time datetime={page.updated}>{page.updated}</time></span><h1>{page.title}</h1><p>{page.summary}</p></div>
+    <dl class="briefing-details"><div><dt>Status</dt><dd>{page.status}</dd></div><div><dt>Reviewer</dt><dd>{page.reviewer}</dd></div><div><dt>Bronbestand</dt><dd><code>{page.sourcePath}</code></dd></div></dl>
+    <article class="document" set:html={html}/>
+  </div>
+</AppLayout>
+<style>
+  .briefing-details{flex-wrap:wrap;margin-top:26px}.briefing-details dd{overflow-wrap:anywhere}
+  .document :global(a){text-decoration:underline;text-underline-offset:3px}
+  .document{overflow-wrap:anywhere}.document :global(table){display:block;overflow-x:auto}
+  .back-link{display:inline-block;margin-bottom:20px}.back-link:focus-visible{outline:3px solid #111;outline-offset:3px}
+</style>

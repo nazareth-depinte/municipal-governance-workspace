@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "checked_on": "2026-09-06",
+    "method": "Three sequential curl GET requests per URL, redirects followed, compression allowed, one-second pause between requests.",
+    "role": "onderzoeker digitale dienstverlening; alleen publieke controles",
+    "system": "OpenAI Codex / GPT-5",
+    "reviewer": null,
+    "disposition": "concept; menselijke beoordeling openstaand",
+    "limitations": "Metingen vanaf één onderzoekscomputer; geen browserrendering, Core Web Vitals of velddata."
+  },
+  "samples": {
+    "https://www.nazarethdepinte.be/vrije-tijd/uit-in": [
+      {"status": 200, "ttfb_seconds": 1.513129, "total_seconds": 1.532111},
+      {"status": 200, "ttfb_seconds": 1.512372, "total_seconds": 1.513280},
+      {"status": 200, "ttfb_seconds": 1.608531, "total_seconds": 1.609026}
+    ],
+    "https://www.nazarethdepinte.be/zoeken": [
+      {"status": 200, "ttfb_seconds": 1.086401, "total_seconds": 1.087051},
+      {"status": 200, "ttfb_seconds": 1.101558, "total_seconds": 1.104555},
+      {"status": 200, "ttfb_seconds": 1.506871, "total_seconds": 1.507596}
+    ],
+    "https://nazarethdepinte.recreatex.be/": [
+      {"status": 200, "ttfb_seconds": 0.737332, "total_seconds": 0.780590},
+      {"status": 200, "ttfb_seconds": 0.825005, "total_seconds": 0.871826},
+      {"status": 200, "ttfb_seconds": 1.017295, "total_seconds": 1.155438}
+    ]
+  }
+}

@@ -1,0 +1,630 @@
+{
+  "metadata": {
+    "status": "concept-niet-menselijk-beoordeeld",
+    "observed_date": "2026-09-06",
+    "role": "onderzoeker digitale dienstverlening; uitsluitend publieke observatie",
+    "system": "OpenAI Codex / GPT-6",
+    "reviewer": null,
+    "disposition": "lokale conceptanalyse; niet gepubliceerd; menselijke beoordeling openstaand",
+    "scope": "Publieke navigatie, landingspaginas, HTML, HTTP-headers, geladen JavaScript en leveranciersdocumentatie. Geen login, formulierinzending of toegang tot operationele dossiers.",
+    "raw_capture_policy": "Geen ruwe paginas, cookies, tokens, sleutels of persoonsgegevens opgenomen. Hashes identificeren tijdelijke responsen; dit is geen openbaar snapshotarchief."
+  },
+  "retrievals": [
+    {
+      "url": "https://www.nazarethdepinte.be/robots.txt",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/robots.txt",
+      "sha256_response_body": "f5411e9f9db30d616128a434b7f0b21ed0b05f733392f2edc2360b35e747d520",
+      "bytes": 2101
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/sitemap.xml",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/sitemap.xml",
+      "sha256_response_body": "723c0942d70ceb84c59cdd0eaf27f52fba3cf0638ffb33bc932b37395f174ba6",
+      "bytes": 218203
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/menu",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/menu",
+      "sha256_response_body": "801c0e7ab409311ff11ca32617a16a364908ac22573971bb83a293aa594048a4",
+      "bytes": 109147
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/digitaal-loket",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.egovflow.be/",
+      "sha256_response_body": "daf4d9b97d3651e9e849a2053f8fd7790d06ba786d4d6e216f02f3b2b075e2d6",
+      "bytes": 1671
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/webshop-en-tickets",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/webshop-en-tickets",
+      "sha256_response_body": "26a19d6fd4f68e008dbfa4a050bd28d57cfbb55b09a80f8194ff705ecec24aec",
+      "bytes": 102936
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/afspraak-maken",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/afspraak-maken",
+      "sha256_response_body": "c0c6f0975b12052b5f1b40fe12f4c82c9a054ea225a05f5d2b3091b92727ef76",
+      "bytes": 103159
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden",
+      "sha256_response_body": "37feb1cbe95f1b24689a48dd808a7036c6cc73d90ef077b025d4e52b45640f32",
+      "bytes": 105066
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/innameopenbaardomein",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/innameopenbaardomein",
+      "sha256_response_body": "7317402ebe6168086aa338921dd1b77d3ddbe3f5064b5e968d6edf005202d8fe",
+      "bytes": 103882
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/reserveren",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/reserveren",
+      "sha256_response_body": "ef2bad350fbe53b1c70d7f6e6ea850bbe176e84467ed4ebe6d3abcd2eb72f450",
+      "bytes": 118911
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/bekendmakingen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/bekendmakingen",
+      "sha256_response_body": "d874232c0be1ace79e39df78cfd5b3d491b932b16e4b317d0c2629225a4b9eac",
+      "bytes": 106316
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/bestuursorganen/gemeente-en-ocmw-raad",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/bestuursorganen/gemeente-en-ocmw-raad",
+      "sha256_response_body": "fa51b7f75e4b1236fad8a30cef01927754c0a1efc8efbb988c3d08ee06e59a67",
+      "bytes": 110152
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren",
+      "sha256_response_body": "95aaac8e21b2552a21718f405d277b8732e8efef4a522ac30f9481f6d2d1f0ae",
+      "bytes": 109497
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/vacatures",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/vacatures",
+      "sha256_response_body": "dffb5ffbb644bfaa0102147a763f5664900d3225beb7543f233812460895ed84",
+      "bytes": 113476
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/communicatie/schrijf-in-voor-onze-nieuwsbrief",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/communicatie/schrijf-in-voor-onze-nieuwsbrief",
+      "sha256_response_body": "fc09f661212b7a9e3d9a630b9aa2a62fb2c9a729a1708b855c2d267eefcf8b51",
+      "bytes": 104339
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/over-nazareth-de-pinte/stratenplan",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/over-nazareth-de-pinte/stratenplan",
+      "sha256_response_body": "f45f56abecb5f8369fb01bab41de54a8e92fd56a526575c558c3426e309192da",
+      "bytes": 103307
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/privacyverklaring",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/privacyverklaring",
+      "sha256_response_body": "1e1d21498cffa5df0a79b8b794b6ada7eee74336df6df9dfe079db80bb7fb707",
+      "bytes": 125558
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/cookies",
+      "retrieved_date": "2026-09-06",
+      "http_result": "429 https://www.nazarethdepinte.be/cookies",
+      "sha256_response_body": "7bf6fef7f9bd76f55a78b1b2fedbffb0bb0b2c983c3dd97159f2a762e7d45b4a",
+      "bytes": 108783
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/toegankelijkheidsverklaring",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/toegankelijkheidsverklaring",
+      "sha256_response_body": "2776bf18d2b224f670ed6434cc51e805fc9a753a276b8ba25f65c11da0d76a98",
+      "bytes": 106552
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/communicatie/app-nazareth-de-pinte",
+      "retrieved_date": "2026-09-06",
+      "http_result": "429 https://www.nazarethdepinte.be/bestuur/communicatie/app-nazareth-de-pinte",
+      "sha256_response_body": "22291f99a920ecec6c306911428291644893b70ea6dec0a0eda4707b83584e1b",
+      "bytes": 105303
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/dienstverlening",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/dienstverlening",
+      "sha256_response_body": "ded6cbfb68be4e7baeb378a2e264a7256bdc93c5c8a547a2544c93f33f8ac8ef",
+      "bytes": 106035
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrijetijd",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrijetijd",
+      "sha256_response_body": "9a96a11f807f018ab7d16b2ecda8ad9fe70bd57c89e35fed08d62d4ad0b229bc",
+      "bytes": 106693
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen",
+      "sha256_response_body": "71b1646abe16830a2d8d6e6d125f6b99459b8c40afa4dae964876ac12badbcfe",
+      "bytes": 105801
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/meldpunt-openbaar-domein",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/meldpunt-openbaar-domein",
+      "sha256_response_body": "41cd0341eff1c72a7dcd04583e0191625ddcb1bf14d355819db8349277bdb621",
+      "bytes": 118536
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/afval-niet-opgehaald",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/afval-niet-opgehaald",
+      "sha256_response_body": "26fd1bb291fe30866e27efd9adfc9e965c7592375fdc975d39cb2f592cbbba58",
+      "bytes": 103371
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden/zwerfvuil-of-sluikstort-melden",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden/zwerfvuil-of-sluikstort-melden",
+      "sha256_response_body": "eb41c90a4451154fe4ad3705cf02437214f59e191db2448fd5037029afb51fcd",
+      "bytes": 111242
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/kapotte-straatlamp-melden",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/kapotte-straatlamp-melden",
+      "sha256_response_body": "b9884080877e88dcad6357badfcf9773b150928d96ef0a763a2a70b7491a2597",
+      "bytes": 105195
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/gestorven-dier",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/gestorven-dier",
+      "sha256_response_body": "b13d31e168459b70b97af43ffea28320a11d17fc1604bceb6a7cc215e9b3e43f",
+      "bytes": 105018
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/ratten-melden",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/ratten-melden",
+      "sha256_response_body": "34079e05e9d1b2a7961394f06005ed627fd40dad46dd689f68c722b2c51298e3",
+      "bytes": 109428
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden/zwerfkat-gesignaleerd",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden/zwerfkat-gesignaleerd",
+      "sha256_response_body": "08f54973745d5eeaff3a10a914f8b1090be1a039f6819583dae3ab21795f8bb6",
+      "bytes": 131370
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden/aziatische-hoornaar-melden",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/burgerparticipatie/burgerinitiatieven/iets-melden/aziatische-hoornaar-melden",
+      "sha256_response_body": "fb3fbda4bdd761604032c68807efb7b58f2c154b81c829bd7bdde0dd5df72134",
+      "bytes": 124504
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/feedback",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/burgerinitiatieven/iets-melden/feedback",
+      "sha256_response_body": "2207e597203ed6d909c20975587060152a8f6f0188e2a37c5d609d1fcb136269",
+      "bytes": 119262
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/container-plaatsen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/container-plaatsen",
+      "sha256_response_body": "96ec205d0bc999e3e9f816eb401d2dcc9a730eb5a5197eb82d0a01b01ed29c97",
+      "bytes": 110583
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/tijdelijk-parkeerverbod-aanvragen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/tijdelijk-parkeerverbod-aanvragen",
+      "sha256_response_body": "4a6292363e713724f11a0fdb8d8bfd47692c5f8f0927d624014132494f58a037",
+      "bytes": 114759
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/stelling-plaatsen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/stelling-plaatsen",
+      "sha256_response_body": "5222918ac79bacd01c64882f45761804a5db63a65b44da408f0eab9e1cf1c739",
+      "bytes": 116404
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/werken-met-signalisatievergunning",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/werken-met-signalisatievergunning",
+      "sha256_response_body": "7424e42a7a37b16675c3b6c28eecbbd6762c3be595f4c5093c28da1774a151cf",
+      "bytes": 110945
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/werftransport-langs-scholen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/mobiliteit-en-openbare-werken/inname-openbaar-domein/werftransport-langs-scholen",
+      "sha256_response_body": "93d8bcce6261825c6323a963791b92e836963f5709a5a87f673e96b965c890c9",
+      "bytes": 112142
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/aanvraagformulier-voor-evenement",
+      "retrieved_date": "2026-09-06",
+      "http_result": "429 https://www.nazarethdepinte.be/aanvraagformulier-voor-evenement",
+      "sha256_response_body": "9a2d79fdcb41fd39c03a797ecd53d5b6f5ff32962feb69111a2837867faeb9a8",
+      "bytes": 18
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/afval-en-recyclage/ophaalkalender",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/afval-en-recyclage/ophaalkalender",
+      "sha256_response_body": "40ef9e322fa7739dfd4e633a4d062bca8a55ba10ae81bb3803cfc9b1cad069ca",
+      "bytes": 113708
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/opvang-en-vakantie/kinderopvang-babys-en-peuters",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/opvang-en-vakantie/kinderopvang-babys-en-peuters",
+      "sha256_response_body": "f80ad6c56f51c4569535a0647661bf9b66cb15b688f9b69c4f4b8fe9cb9b2f12",
+      "bytes": 108297
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/onderwijs/centraal-aanmelden-voor-basisscholen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/onderwijs/centraal-aanmelden-voor-basisscholen",
+      "sha256_response_body": "ef42a08e1c43982c7945b49b59c086479671afc8d5f7062be5f721fd8aebb711",
+      "bytes": 104532
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/burgerparticipatie",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/burgerparticipatie",
+      "sha256_response_body": "2fe44b3f1173e90c82c842e1f72d1d139a0d6af6c6222f55b11cb5aba3086c67",
+      "bytes": 106596
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/organiseren",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/organiseren",
+      "sha256_response_body": "9932111d285848612b1d4187c4a7f444e60e34ab8e7ebc9fa88a674f5e9c67ae",
+      "bytes": 116425
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/wonen-en-werken/ondernemen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/wonen-en-werken/ondernemen",
+      "sha256_response_body": "e4d4d5f52f232ea667ed3b407f0a8ba37178fc514901b4f68205890dd00e19ba",
+      "bytes": 107431
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/wonen-en-werken/bouwen-en-huisvesting",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/wonen-en-werken/bouwen-en-huisvesting",
+      "sha256_response_body": "a13d306f91fe693fa0ccd6591f08de37c7bac62668c30113cb7bca045d25812e",
+      "bytes": 103839
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leven-en-werken/bouwen-en-huisvesting/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leven-en-werken/bouwen-en-huisvesting/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "sha256_response_body": "2f1722f74f17d237c0c3bccebf379337c8cefdd136dee425958306e6194b81cd",
+      "bytes": 109017
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/bekendmakingen/reglementen/vastgoedinformatie-aanvragen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/bekendmakingen/reglementen/vastgoedinformatie-aanvragen",
+      "sha256_response_body": "1861cf9b0deba70e109fa299e00b714c06918f14341c45689e00397243f5cfea",
+      "bytes": 114067
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/bekendmakingen/vergaderingen-van-de-raad",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/bekendmakingen/vergaderingen-van-de-raad",
+      "sha256_response_body": "25cabc2b9bfc1817f9a0b3e00270a4c9f7a400e0218985ef168b23f63d3a9bd1",
+      "bytes": 104982
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/bekendmakingen/openbare-onderzoeken-en-beslissingen-omgevingsvergunningen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/bekendmakingen/openbare-onderzoeken-en-beslissingen-omgevingsvergunningen",
+      "sha256_response_body": "4c2363a459e1c68decb0f9185c9627236e5655867989e0620537b27fd629e059",
+      "bytes": 103166
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/vrijwilligerswerk/vrijwilligerswerk-zoeken",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/vrijwilligerswerk/vrijwilligerswerk-zoeken",
+      "sha256_response_body": "d0a58c1cf9983e27af237755b824d5c9d66a09d3c5095841edc0f995479a766f",
+      "bytes": 105265
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/communicatie/app-nazareth-de-pinte",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/communicatie/app-nazareth-de-pinte",
+      "sha256_response_body": "22291f99a920ecec6c306911428291644893b70ea6dec0a0eda4707b83584e1b",
+      "bytes": 105303
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/cookies",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/cookies",
+      "sha256_response_body": "7bf6fef7f9bd76f55a78b1b2fedbffb0bb0b2c983c3dd97159f2a762e7d45b4a",
+      "bytes": 108783
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/uit-in",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/uit-in",
+      "sha256_response_body": "40bafa6b68949e991f8098b6a216a73aa96bdbaec64a4145a3411ac48dc185d8",
+      "bytes": 157432
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/zoeken",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/zoeken",
+      "sha256_response_body": "b530aa3ee7baeebba9328e40dd4de5af1b9f49fbff0b88f5b1359dae7d2be0c4",
+      "bytes": 133448
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/bestuur/bekendmakingen/reglementen/klacht-indienen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/bestuur/bekendmakingen/reglementen/klacht-indienen",
+      "sha256_response_body": "ac9a350e99e04a698331a0d4ad1f10484de4c5dfdd0e86b15023bda8df89b78b",
+      "bytes": 108749
+    },
+    {
+      "url": "https://nazarethdepinte.egovflow.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.egovflow.be/",
+      "sha256_response_body": "daf4d9b97d3651e9e849a2053f8fd7790d06ba786d4d6e216f02f3b2b075e2d6",
+      "bytes": 1671
+    },
+    {
+      "url": "https://nazarethdepinte.recreatex.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.recreatex.be/",
+      "sha256_response_body": "af085b6268b3f2923570534762c18073f183bec18cd54e08c310949aabac2ca5",
+      "bytes": 88070
+    },
+    {
+      "url": "https://nazarethdepinte.myshopify.com/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.myshopify.com/",
+      "sha256_response_body": "0e98b59904e0bfcc5b991602d711fd09f8a5fd47e8ca9627fcb206becd35b8f8",
+      "bytes": 79698
+    },
+    {
+      "url": "https://shop.gift2give.be/nazarethdepinte",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://shop.gift2give.be/nazarethdepinte",
+      "sha256_response_body": "3fbd1f140abbfd64b3ae814d91988b7e6d07b351a8e02357b28de16dde235426",
+      "bytes": 15463
+    },
+    {
+      "url": "https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazareth-depinte-raadpleegomgeving.csecho.be/",
+      "sha256_response_body": "fd85a3b527361fe97d05ac90b11787dd260db42dd6add8bbc9de92eed03d7781",
+      "bytes": 15839
+    },
+    {
+      "url": "https://streamings.streamovations.be/nazareth-de-pinte/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://streamings.streamovations.be/nazareth-de-pinte/",
+      "sha256_response_body": "335fb459053bcf53068ee7fd64a7ca0244fa18e30bd1146cb5e8e6953b702b87",
+      "bytes": 5672
+    },
+    {
+      "url": "https://nazarethdepinte.bibliotheek.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.bibliotheek.be/",
+      "sha256_response_body": "c1290e523ebf1b85c724232b71bebb378e61f2e39f47c1b8eaf3ff5b57098811",
+      "bytes": 710610
+    },
+    {
+      "url": "https://www.jobsolutions.be/iframe/nazareth_de_pinte/vacatures",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.jobsolutions.be/iframe/nazareth_de_pinte/vacatures",
+      "sha256_response_body": "9d27f30dab489b888ea903a7878ce57558d434dca422fbab0b9e01463c8dd669",
+      "bytes": 8018
+    },
+    {
+      "url": "https://www.planyo.com/booking.php?calendar=53796",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.planyo.com/booking.php?calendar=53796",
+      "sha256_response_body": "c698aa85d68e371c56a65c29a0ff7c94069d5a593227b82da1109a138255b0eb",
+      "bytes": 4445
+    },
+    {
+      "url": "https://www.depinte.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/",
+      "sha256_response_body": "d4072400e5807c654ef5499d0c2192f7e91139c2e0a41b110e730cf5bebf9d65",
+      "bytes": 149911
+    },
+    {
+      "url": "https://www.nazareth.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.be/",
+      "sha256_response_body": "3587313ff64ea4431cb79130b31edcd3c4911194eb8d5015d37d188aac7051a3",
+      "bytes": 149776
+    },
+    {
+      "url": "https://include.timeblockr.com/v1/config/nazareth-pinte/config.js",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://include.timeblockr.com/v1/config/nazareth-pinte/config.js",
+      "sha256_response_body": "cbd467e23c1cab32a33feb667cd29d0463c8ae8a60c76c69fc49fcca46dc288c",
+      "bytes": 51785
+    },
+    {
+      "url": "https://nazarethdepinte.egovflow.be/assets/index-M3hVAHE-.js",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.egovflow.be/assets/index-M3hVAHE-.js",
+      "sha256_response_body": "1a5eb8cb7638686ed802efe61d1f92522b78063c530a83b2a0911f1db2a308d3",
+      "bytes": 1002349
+    },
+    {
+      "url": "https://shop.gift2give.be/main.bd3c36746f9664ad.js",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://shop.gift2give.be/main.bd3c36746f9664ad.js",
+      "sha256_response_body": "35f1b4c7e3dff44d461f551c729defba4d9ec30e9135bda184ea7f80b0224b26",
+      "bytes": 587877
+    },
+    {
+      "url": "https://streamings.streamovations.be/assets/index-C-OCNYRz.js",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://streamings.streamovations.be/assets/index-C-OCNYRz.js",
+      "sha256_response_body": "3c1d90713fefa8cc735e33e84003f1367d76a67b223b0924dc1b0accfa5ece93",
+      "bytes": 157265
+    },
+    {
+      "url": "https://include.timeblockr.com/v1/js/core/timeblockr.js",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://include.timeblockr.com/v1/js/core/timeblockr.js",
+      "sha256_response_body": "510043d9bd24811f9950e4dd1250e4916d28cd5dd7fd9dda7659efec9720a72e",
+      "bytes": 9020
+    },
+    {
+      "url": "https://nazareth-depinte.spotbooking.be/#/aanvraag/new",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazareth-depinte.spotbooking.be/#/aanvraag/new",
+      "sha256_response_body": "1282b167e7815fb07f0731386b7ab70e685751f32813de47862fb270e61e85f1",
+      "bytes": 7016
+    },
+    {
+      "url": "https://nazarethdepinte.consultatieomgeving.net/burger",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.consultatieomgeving.net/burger",
+      "sha256_response_body": "9ebe79443de41cbe1efc3fc398f70f190f044a7df68c0c95ad2f30a11c095a28",
+      "bytes": 39417
+    },
+    {
+      "url": "https://nazarethdepinte.aanmelden.in/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazarethdepinte.aanmelden.in/",
+      "sha256_response_body": "9d3f3031658d3680be8249cbc8c2af04b6793ba72b260dce4183c079784044c3",
+      "bytes": 10173
+    },
+    {
+      "url": "https://opvang.vlaanderen/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://opvang.vlaanderen/",
+      "sha256_response_body": "8417f87d61b743f4e8a168ed674c2824bc3cc0dceec4d37a259ea4868447aae4",
+      "bytes": 585121
+    },
+    {
+      "url": "https://shop.nazarethdepinte.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://shop.nazarethdepinte.be/",
+      "sha256_response_body": "3e6d9c571c27384d75915e1b45bea8a2732a1e0db856446b686044e78137281a",
+      "bytes": 679
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/form/aanvraagformulier-voor-evenement",
+      "sha256_response_body": "7435db4d7b51503c1523724dc8f30beddfed1485188e1b8f259a73975402430d",
+      "bytes": 127973
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/leren-en-ontspannen/organiseren/evenement-aankondigen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/leren-en-ontspannen/organiseren/evenement-aankondigen",
+      "sha256_response_body": "840c28333ff230065c80fa40dbc7b859305a560e7d64b5986b53db7b5789e0b5",
+      "bytes": 103165
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/inspraakprojecten",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/inspraakprojecten",
+      "sha256_response_body": "927e3191da80c5289d1d6737ba5892e51d69029c410b5a54bb4eec794aab33de",
+      "bytes": 102834
+    },
+    {
+      "url": "https://www.ivmmilieubeheer.be/e-loket/meldingsformulier-over-inzamelingen",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.ivmmilieubeheer.be/e-loket/meldingsformulier-over-inzamelingen",
+      "sha256_response_body": "30ef4576bded2ff9280c0379394eb5b4fcc92ecf12ec60a655e77f5a5241ba4a",
+      "bytes": 70549
+    },
+    {
+      "url": "https://straatlampen.fluvius.be/",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://straatlampen.fluvius.be/",
+      "sha256_response_body": "d48624864851772613cf564f4a4156afdc0bb4d2f21327d5b29d41bc052aab0e",
+      "bytes": 32672
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/organiseren/subsidies-organiseren/startsubsidie-vereniging",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/organiseren/subsidies-organiseren/startsubsidie-vereniging",
+      "sha256_response_body": "d76aaac695e41464975d7b63088d2048622325bebc26830ab8bd74df482140e2",
+      "bytes": 105934
+    },
+    {
+      "url": "https://nazareth-depinte.spotbooking.be/main.8aaea1420cb45186.js",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://nazareth-depinte.spotbooking.be/main.8aaea1420cb45186.js",
+      "sha256_response_body": "14f934975045d91b647952b616de622765bb7c378bdaaa787f82b95c07afc934",
+      "bytes": 5254560
+    },
+    {
+      "url": "https://shop.nazarethdepinte.be/releases/1788532499/assets/index-68Gye-EZ.js",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://shop.nazarethdepinte.be/releases/1788532499/assets/index-68Gye-EZ.js",
+      "sha256_response_body": "a49363c187a6426e71f6a69d0fb7b2d5e73e294937163d5b6b960748088b96f2",
+      "bytes": 3119645
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/opvang-en-vakantie/buitenschoolse-kinderopvang",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/opvang-en-vakantie/buitenschoolse-kinderopvang",
+      "sha256_response_body": "ba67ca4198b1b7d7bf8cb0f278bbd488d44b4ff20a093e39741c37d1aced88ed",
+      "bytes": 105303
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/opvang-en-vakantie/buitenschoolse-vakantieopvang",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/kinderen-en-jongeren/opvang-en-vakantie/buitenschoolse-vakantieopvang",
+      "sha256_response_body": "39cfe1b339b09da9d0c7b6b80d8879f2be3c40506748a0a6763ec403ad4dd2fc",
+      "bytes": 105303
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/vrije-tijd/organiseren/evenement-aankondigen/jouw-activiteit-in-de-uitdatabank-0",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/vrije-tijd/organiseren/evenement-aankondigen/jouw-activiteit-in-de-uitdatabank-0",
+      "sha256_response_body": "b4692fce6f734efd1174cd3c9592ef66fe71426fd4522c6b488b66e9c4e112de",
+      "bytes": 105480
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/inspraakprojecten/de-groene-boulevard-centrale-as",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/inspraakprojecten/de-groene-boulevard-centrale-as",
+      "sha256_response_body": "405118a178e26133a812085df3db115d8a3a0cbc011ae11c2bd356c8ad9c150f",
+      "bytes": 138746
+    },
+    {
+      "url": "https://www.nazarethdepinte.be/besturen/burgerparticipatie/inspraakprojecten/zegget-ne-keer-meerjarenplan",
+      "retrieved_date": "2026-09-06",
+      "http_result": "200 https://www.nazarethdepinte.be/besturen/burgerparticipatie/inspraakprojecten/zegget-ne-keer-meerjarenplan",
+      "sha256_response_body": "033799f34ca39be5199334e2185c0ddfc872ea1949d4339d6a6d7c96fe4b5a5d",
+      "bytes": 110507
+    }
+  ]
+}
